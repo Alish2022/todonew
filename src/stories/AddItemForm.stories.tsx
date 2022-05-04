@@ -7,6 +7,11 @@ import {action} from "@storybook/addon-actions";
 export default {
     title: 'ToDoList/AddItemForm',
     component: AddItemForm,
+    argTypes: {
+        addItem: {
+            description: "callback"
+        }
+    }
 } as ComponentMeta<typeof AddItemForm>;
 
 const Template: ComponentStory<typeof AddItemForm> = (args) => <AddItemForm {...args} />;

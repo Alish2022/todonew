@@ -59,8 +59,7 @@ export const changeFilterAC = (todolistId:string,filter: FilterValuesType): Chan
 type ActionType = RemoveActionType | ChangeTodolistTitleActionType|AddTodolistActionType|ChangeFilterActionType
 
 const initialState:Array<TodolistType>=[
-    {id: todolistId1, title: "What to learn", filter: "all"},
-    {id: todolistId2, title: "What to buy", filter: "all"}
+
 ]
 
 export const todolistReducer = (state: Array<TodolistType>=initialState, action: ActionType):Array<TodolistType>=> {

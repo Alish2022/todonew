@@ -11,9 +11,13 @@ export default {
             description: "value EditableSpan changed"
         },
         value: {
-            defaultValue: 'Html',
+            //defaultValue: 'Html',
             description: "start value EditableSpan"
         }
+    },
+    args:{
+      // value:'js',
+        //  onChange: action("value EditableSpan changed")
     }
 } as ComponentMeta<typeof EditableSpan>;
 
@@ -22,6 +26,7 @@ const Template: ComponentStory<typeof EditableSpan> = (args) => <EditableSpan {.
 export const EditableSpanStory = Template.bind({});
 
 EditableSpanStory.args = {
-    onChange: action("value EditableSpan changed")
+    onChange: action("value EditableSpan changed"),
+    value:'ts'
 };
 
